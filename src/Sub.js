@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from "reactstrap";
-import { Link } from "react-router-dom";
 import Map from './Map'
 
 
@@ -31,17 +30,15 @@ class App extends React.Component {
 						</Container>
 						<Container className="pb-1 text-center">
             	<Col className="justify-content-center">
-                <Link to="/sub">
 									<Button className="my-1" color="primary" type="button" onClick={this.handleFormSubmit}>
-										시작하기
+										끝
 									</Button>
-                </Link>
 							</Col>
             </Container>
 						<Container className="pb-1 text-center">
             	<Col className="justify-content-center">
 									<Button className="my-1" color="primary" type="button" onClick={this.handleFormSubmit}>
-										사용법
+										끝
 									</Button>
 							</Col>
             </Container>           
