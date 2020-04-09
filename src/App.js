@@ -5,7 +5,7 @@ import Map from './Map'
 
 class App extends React.Component {
   componentDidMount() {
-    document.body.classList.add("bg-default");
+    document.body.classList.add("bg-white");
   }
 
   componentWillUnmount() {
