@@ -1,5 +1,5 @@
 import Main from "./Main";
-import Sub from "./Sub"
+import Map_Search from "./Map_Search"
 
 
 var routes = [
@@ -10,10 +10,10 @@ var routes = [
     layout: "/main"
   },
   {
-    path: "/sub",
-    name: "sub",
-    component: Sub,
-    layout: "/sub"
+    path: "/map_search",
+    name: "map_search",
+    component: Map_Search,
+    layout: "/map_search"
   },
 ];
 

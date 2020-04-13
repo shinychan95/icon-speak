@@ -31,7 +31,7 @@ class App extends React.Component {
 						</Container>
 						<Container className="pb-1 text-center">
             	<Col className="justify-content-center">
-                <Link to="/sub">
+                <Link to="/map_search">
 									<Button className="my-1" color="primary" type="button" onClick={this.handleFormSubmit}>
 										시작하기
 									</Button>
