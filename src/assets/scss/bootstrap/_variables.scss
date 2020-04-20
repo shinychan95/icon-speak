@@ -17,7 +17,7 @@ $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-900: red !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -94,6 +94,29 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+$facebook:      #3b5999 !default;
+$twitter:       #1da1f2 !default;
+$google-plus:   #dd4b39 !default;
+$instagram:     #e4405f !default;
+$pinterest:     #bd081c !default;
+$youtube:       #cd201f !default;
+$slack:         #3aaf85 !default;
+$dribbble:      #ea4c89 !default;
+$github:        #222222 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "facebook":     $facebook,
+  "twitter":      $twitter,
+  "google-plus":  $google-plus,
+  "instagram":    $instagram,
+  "pinterest":    $pinterest,
+  "youtube":      $youtube,
+  "slack":        $slack,
+  "dribbble":     $dribbble,
+  "github":       $github
+), $colors);
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
