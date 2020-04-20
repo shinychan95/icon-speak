@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Col } from "reactstrap";
 
 
 class Map extends React.Component {
@@ -15,9 +16,7 @@ class Map extends React.Component {
 
   render() {
     return (
-			<div>
-				<div id="map" style={{ width: "400px", height: "300px" }} />
-			</div>
+			<div id="map" style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} />
     );
   }
 }

@@ -20,16 +20,16 @@ export default function Main () {
   return (
     <>
       <div className="main-content">
-          <div className="header bg-orange pb-9 py-5 py-lg-6">
+          <div className="header bg-orange pb-5 py-5 py-lg-6">
             <Container>
               <div className="header-body text-center">
                 <h1 className="text-black">Icon Speak</h1>
               </div>
             </Container>
           </div>
-          <Container className="py-1 pb-6 text-center">
+          <Container className="py-1 pb-4 text-center">
             <Col className="justify-content-center">
-              <img src={MainImage}/>              
+              <img src={MainImage} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>              
             </Col>
           </Container>
           <Container className="pb-1 text-center">
