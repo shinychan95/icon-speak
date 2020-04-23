@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import Park from "../아이콘 그림/썸네일-jpeg/공원.jpg"
@@ -34,24 +34,25 @@ export default function Select () {
       document.body.classList.remove("bg-twitter");
     }
   }, []);
-  
+
   return (
     <>
       <div className="main-content">
-          <div className="header bg-twitter pb-9 py-5 py-lg-6">
-            <Container>
-              <div className="header-body text-center">
-                <h1 className="text-black">찾고싶은 장소를 선택하시오.</h1>
-              </div>
-            </Container>
-          </div>
+        <div className="header bg-twitter pb-1 py-3 py-lg-6">
+          <Container>
+            <div className="header-body text-center">
+              <h1 className="text-black">찾고싶은 장소를 선택하시오.</h1>
+            </div>
+          </Container>
+        </div>
+        <div className="body bg-twitter pb-9">
           <Container>
             <Row>
               <Col>
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Park} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                        
+                      <img src={Park} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                        
                     </Container>
                     공원
                   </Button>                  
@@ -61,17 +62,19 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Train} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Train} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     기차역
                   </Button>                   
                 </Link>
               </Col>
+            </Row>
+            <Row>
               <Col>
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={PlayGround} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={PlayGround} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     놀이터
                   </Button>                   
@@ -81,7 +84,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Mart} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Mart} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     마트
                   </Button>                   
@@ -93,7 +96,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Salon} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Salon} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     미용실
                   </Button>                    
@@ -103,17 +106,19 @@ export default function Select () {
                 < Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Dpeartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Dpeartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     백화점
                   </Button>                    
                 </Link>
-              </Col>                              
+              </Col>  
+            </Row>
+            <Row>                            
               <Col>
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Bus} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Bus} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     버스정류장
                   </Button>                    
@@ -123,7 +128,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Bakery} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Bakery} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     베이커리
                   </Button>                   
@@ -135,7 +140,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Hospital}style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Hospital}style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     병원
                   </Button>                     
@@ -145,17 +150,19 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
-                      <img src={Church} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Church} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     성당 및 교회
                   </Button>                   
                 </Link>   
               </Col>
+            </Row>
+            <Row>
               <Col>
                 <Link>
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Swimming} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Swimming} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     수영장
                   </Button>                 
@@ -165,7 +172,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Restaurant} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Restaurant} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     식당
                   </Button>                    
@@ -177,7 +184,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Aquarium} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Aquarium} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     아쿠아리움
                   </Button>                    
@@ -187,17 +194,19 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Apartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Apartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     아파트
                   </Button>                    
                 </Link>
               </Col>
+            </Row>
+            <Row>
               <Col>
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Pharmacy} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Pharmacy} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     약국
                   </Button>                    
@@ -207,7 +216,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Theater} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Theater} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     극장
                   </Button>                    
@@ -219,7 +228,7 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Post} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Post} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     우체국
                   </Button>                    
@@ -229,17 +238,19 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Bank} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Bank} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     은행
                   </Button>                      
                 </Link>
               </Col>
+            </Row>
+            <Row>
               <Col>
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Gas} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Gas} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     주유소
                   </Button>                    
@@ -249,14 +260,15 @@ export default function Select () {
                 <Link to="/map_search">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
-                      <img src={Subway} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}} alt="description of image"/>                      
+                      <img src={Subway} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
                     </Container>
                     지하철역
                   </Button>                    
                 </Link>
               </Col>
             </Row>
-          </Container>
+          </Container>  
+        </div>
       </div>
     </>
   );

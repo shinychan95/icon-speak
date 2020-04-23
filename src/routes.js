@@ -2,6 +2,8 @@ import Main from "./views/Main";
 import MapSearch from "./views/MapSearch"
 import Select from "./views/Select"
 import PartOfSpeechList from './views/PartOfSpeechList'
+import SelectLocation from './views/SelectLocation'
+import SelectWord from './views/SelectWord'
 
 var routes = [
   {
@@ -23,10 +25,22 @@ var routes = [
     layout: "/select_place"
   },
   {
+    path: "/select_Location",
+    name: "select_Location",
+    component: SelectLocation,
+    layout: "/select_Location"
+  },
+  {
     path: "/choose1",
     name: "choose1",
     component: PartOfSpeechList,
     layout: "/choose1"
+  },
+  {
+    path: "/choose2",
+    name: "choose2",
+    component: SelectWord,
+    layout: "/choose2"
   },
 ];
 

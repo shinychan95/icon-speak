@@ -8,6 +8,8 @@ import Main from './views/Main';
 import MapSearch from './views/MapSearch';
 import Select from './views/Select';
 import PartOfSpeechList from './views/PartOfSpeechList';
+import SelectLocation from './views/SelectLocation';
+import SelectWord from './views/SelectWord';
 
 // 디자인을 위한 css파일
 import "./assets/vendor/nucleo/css/nucleo.css";
@@ -21,7 +23,9 @@ ReactDOM.render(
       <Route path="/main" render={props => <Main {...props} />} />
       <Route path="/map_search" render={props => <MapSearch {...props} />} />
       <Route path="/select_place" render={props => <Select {...props} />} />
-      <Route path="/choose" render={props => <PartOfSpeechList {...props} />} />
+      <Route path="/choose1" render={props => <PartOfSpeechList {...props} />} />
+      <Route path="/select_Location" render={props => <SelectLocation {...props} />} />
+      <Route path="/choose2" render={props => <SelectWord {...props} />} />
       <Redirect from="/" to="/main"/>
     </Switch>
   </BrowserRouter>,
