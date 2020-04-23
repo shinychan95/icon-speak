@@ -1,7 +1,7 @@
-import Main from "./Main";
-import MapSearch from "./MapSearch"
-import Select from "./Select"
-import PartOfSpeechList from './PartOfSpeechList'
+import Main from "./views/Main";
+import MapSearch from "./views/MapSearch"
+import Select from "./views/Select"
+import PartOfSpeechList from './views/PartOfSpeechList'
 
 var routes = [
   {

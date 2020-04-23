@@ -4,10 +4,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 // 내가 만든 자바스크립트 파일
-import Main from './Main';
-import MapSearch from './MapSearch';
-import Select from './Select';
-import PartOfSpeechList from './PartOfSpeechList';
+import Main from './views/Main';
+import MapSearch from './views/MapSearch';
+import Select from './views/Select';
+import PartOfSpeechList from './views/PartOfSpeechList';
 
 // 디자인을 위한 css파일
 import "./assets/vendor/nucleo/css/nucleo.css";

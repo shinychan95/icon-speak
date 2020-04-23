@@ -2,29 +2,29 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Link } from "react-router-dom";
 
-import Park from "./아이콘 그림/썸네일-jpeg/공원.jpg"
-import Train from "./아이콘 그림/썸네일-jpeg/기차역-1.jpg"
-import PlayGround from "./아이콘 그림/썸네일-jpeg/놀이터.jpg"
-import Mart from "./아이콘 그림/썸네일-jpeg/마트.jpg"
-import Salon from "./아이콘 그림/썸네일-jpeg/미용실.jpg"
+import Park from "../아이콘 그림/썸네일-jpeg/공원.jpg"
+import Train from "../아이콘 그림/썸네일-jpeg/기차역-1.jpg"
+import PlayGround from "../아이콘 그림/썸네일-jpeg/놀이터.jpg"
+import Mart from "../아이콘 그림/썸네일-jpeg/마트.jpg"
+import Salon from "../아이콘 그림/썸네일-jpeg/미용실.jpg"
 
-import Dpeartment from "./아이콘 그림/썸네일-jpeg/백화점-1.jpg"
-import Bus from "./아이콘 그림/썸네일-jpeg/버스정류장.jpg"
-import Bakery from "./아이콘 그림/썸네일-jpeg/베이커리.jpg"
-import Hospital from "./아이콘 그림/썸네일-jpeg/병원.jpg"
-import Church from "./아이콘 그림/썸네일-jpeg/성당교회.jpg"
+import Dpeartment from "../아이콘 그림/썸네일-jpeg/백화점-1.jpg"
+import Bus from "../아이콘 그림/썸네일-jpeg/버스정류장.jpg"
+import Bakery from "../아이콘 그림/썸네일-jpeg/베이커리.jpg"
+import Hospital from "../아이콘 그림/썸네일-jpeg/병원.jpg"
+import Church from "../아이콘 그림/썸네일-jpeg/성당교회.jpg"
 
-import Swimming from "./아이콘 그림/썸네일-jpeg/수영장.jpg"
-import Restaurant from "./아이콘 그림/썸네일-jpeg/식당-2.jpg"
-import Aquarium from "./아이콘 그림/썸네일-jpeg/아쿠아리움.jpg"
-import Apartment from "./아이콘 그림/썸네일-jpeg/아파트-2.jpg"
-import Pharmacy from "./아이콘 그림/썸네일-jpeg/약국.jpg"
+import Swimming from "../아이콘 그림/썸네일-jpeg/수영장.jpg"
+import Restaurant from "../아이콘 그림/썸네일-jpeg/식당-2.jpg"
+import Aquarium from "../아이콘 그림/썸네일-jpeg/아쿠아리움.jpg"
+import Apartment from "../아이콘 그림/썸네일-jpeg/아파트-2.jpg"
+import Pharmacy from "../아이콘 그림/썸네일-jpeg/약국.jpg"
 
-import Theater from "./아이콘 그림/썸네일-jpeg/영화관.jpg"
-import Post from "./아이콘 그림/썸네일-jpeg/우체국-2.jpg"
-import Bank from "./아이콘 그림/썸네일-jpeg/은행.jpg"
-import Gas from "./아이콘 그림/썸네일-jpeg/주유소-2.jpg"
-import Subway from "./아이콘 그림/썸네일-jpeg/지하철역-2.jpg"
+import Theater from "../아이콘 그림/썸네일-jpeg/영화관.jpg"
+import Post from "../아이콘 그림/썸네일-jpeg/우체국-2.jpg"
+import Bank from "../아이콘 그림/썸네일-jpeg/은행.jpg"
+import Gas from "../아이콘 그림/썸네일-jpeg/주유소-2.jpg"
+import Subway from "../아이콘 그림/썸네일-jpeg/지하철역-2.jpg"
 
 export default function Select () {
 

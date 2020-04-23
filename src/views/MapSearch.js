@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from "reactstrap";
 import axios from 'axios'; // HTTP 클라이언트 라이브러리
 import { Link } from "react-router-dom";
-import Map from './Map'
 
 
 class MapSearch extends React.Component {

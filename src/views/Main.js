@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Link } from "react-router-dom";
-import MainImage from "./img/icon.png"
+import MainImage from "../img/icon.png"
 
 export default function Main () {
 
