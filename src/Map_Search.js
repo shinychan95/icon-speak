@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from "reactstrap";
 import axios from 'axios'; // HTTP 클라이언트 라이브러리
+import { Link } from "react-router-dom";
 import Map from './Map'
 
 
@@ -56,7 +57,7 @@ class App extends React.Component {
     return (
       <>
         <div className="main-content">
-            <div className="header bg-white pb-5 py-5 py-lg-6">
+            <div className="header bg-twitter pb-5 py-5 py-lg-6">
               <Container className="pb-1 text-center">
                 <div className="header-body text-center">
 								  <h1 className="text-black">Icon Speak</h1>
@@ -67,9 +68,11 @@ class App extends React.Component {
 						<Container className="pb-1 text-center">
               <Col className="justify-content-center">
                 <div id="map" style={{margin: "auto", maxWidth: "100%", height: "400px"}} />
-                <Button className="my-1 mt-4" color="primary" type="button" onClick={() => this.getResult()}>
-                  장소 탐색
-                </Button>
+                <Link to="/choose1">
+                  <Button className="my-1 mt-4" color="primary" type="button">
+                    장소 탐색
+                  </Button>                  
+                </Link>
               </Col>
             </Container>           
         </div>
