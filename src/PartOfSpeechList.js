@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Link } from "react-router-dom";
-import MainImage from "./img/icon.png"
 
-export default function Main () {
+export default function PartOfSpeechList () {
 
   useEffect( () => {
     document.body.classList.add("bg-twiiter");
@@ -11,10 +10,6 @@ export default function Main () {
       document.body.classList.remove("bg-default");
     }
   }, []);
-
-  const [modal, setModal] = useState(false);
-
-  const toggle = () => setModal(!modal);
 
   
   return (

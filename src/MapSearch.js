@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Map from './Map'
 
 
-class App extends React.Component {
+class MapSearch extends React.Component {
   componentDidMount() {
     document.body.classList.add("bg-white");
     let container = document.getElementById('map');
@@ -68,7 +68,7 @@ class App extends React.Component {
 						<Container className="pb-1 text-center">
               <Col className="justify-content-center">
                 <div id="map" style={{margin: "auto", maxWidth: "100%", height: "400px"}} />
-                <Link to="/choose1">
+                <Link to="/choose">
                   <Button className="my-1 mt-4" color="primary" type="button">
                     장소 탐색
                   </Button>                  
@@ -82,4 +82,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default MapSearch;

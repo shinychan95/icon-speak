@@ -5,8 +5,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 // 내가 만든 자바스크립트 파일
 import Main from './Main';
-import Map_Search from './Map_Search';
+import MapSearch from './MapSearch';
 import Select from './Select';
+import PartOfSpeechList from './PartOfSpeechList';
+
 // 디자인을 위한 css파일
 import "./assets/vendor/nucleo/css/nucleo.css";
 import "./assets/scss/argon-dashboard-react.scss";
@@ -17,8 +19,9 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/main" render={props => <Main {...props} />} />
-      <Route path="/map_search" render={props => <Map_Search {...props} />} />
+      <Route path="/map_search" render={props => <MapSearch {...props} />} />
       <Route path="/select_place" render={props => <Select {...props} />} />
+      <Route path="/choose" render={props => <PartOfSpeechList {...props} />} />
       <Redirect from="/" to="/main"/>
     </Switch>
   </BrowserRouter>,

@@ -1,7 +1,7 @@
 import Main from "./Main";
-import Map_Search from "./Map_Search"
+import MapSearch from "./MapSearch"
 import Select from "./Select"
-import Part_of_Speech_List from './Part_of_Speech_List'
+import PartOfSpeechList from './PartOfSpeechList'
 
 var routes = [
   {
@@ -13,7 +13,7 @@ var routes = [
   {
     path: "/map_search",
     name: "map_search",
-    component: Map_Search,
+    component: MapSearch,
     layout: "/map_search"
   },
   {
@@ -25,7 +25,7 @@ var routes = [
   {
     path: "/choose1",
     name: "choose1",
-    component: Part_of_Speech_List,
+    component: PartOfSpeechList,
     layout: "/choose1"
   },
 ];

@@ -26,7 +26,7 @@ import Bank from "./아이콘 그림/썸네일-jpeg/은행.jpg"
 import Gas from "./아이콘 그림/썸네일-jpeg/주유소-2.jpg"
 import Subway from "./아이콘 그림/썸네일-jpeg/지하철역-2.jpg"
 
-export default function Main () {
+export default function Select () {
 
   useEffect( () => {
     document.body.classList.add("bg-twitter");
