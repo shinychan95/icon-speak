@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Container } from "reactstrap";
 
 export default function PartOfSpeechList () {
 
