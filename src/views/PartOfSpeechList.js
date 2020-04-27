@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, ListGroup, ListGroupItem } from "reactstrap";
+import { Container, Row, Col, Button, ListGroup, ListGroupItem,  Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 export default function PartOfSpeechList () {
@@ -11,6 +12,9 @@ export default function PartOfSpeechList () {
     }
   }, []);
 
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
   
   return (
     <>
@@ -21,11 +25,19 @@ export default function PartOfSpeechList () {
                 <h1 className="text-black">찾을 단어가 있는 품사를 고르시오</h1>
               </div>
             </Container>
-          </div>
-          <div className="body bg-youtube pb-9">
             <Container>
-              <div className="body bg-youtube pb-9">
-                <h3>품사를 선택하시오</h3>
+              <InputGroup>
+                  <Input />
+                  <InputGroupAddon addonType="append"><Button>검색</Button></InputGroupAddon>
+              </InputGroup>
+            </Container>
+          </div>
+          <Container>
+            <h3 className="bg-white">단어를 누르면 단어가 추가되어 문장이 됩니다.</h3>
+          </Container>
+          <div className="body bg-youtube pb-1">
+            <Container>
+              <div className="body bg-youtube pb-1">
                 <ListGroup>
                   <ListGroupItem tag="a" href="/choose2" action>명사</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose2" action>동사</ListGroupItem>
@@ -35,6 +47,19 @@ export default function PartOfSpeechList () {
               </div>
             </Container>
           </div>
+          <Container>
+            <Button color="secondary" onClick={toggle}>검색 단어 추가 문의</Button>
+            <Modal isOpen={modal} toggle={toggle} className="">
+                <ModalHeader toggle={toggle}>검색 단어 추가 문의</ModalHeader>
+                <ModalBody>
+                  <Input>추가 검색 요청할 단어를 넣으시오</Input>
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="primary" onClick={toggle}>닫기</Button>
+                  <Button color="primary" onClick={toggle}>요청하기</Button>
+                </ModalFooter>
+              </Modal>
+          </Container>
       </div>
     </>
   );

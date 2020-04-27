@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, ListGroup, ListGroupItem } from "reactstrap";
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
+import Bread from "../장소별 그림/04_베이커리JPEG/베이커리/식빵.jpg"
+import Train from "../아이콘 그림/썸네일-jpeg/기차역-1.jpg"
+import PlayGround from "../아이콘 그림/썸네일-jpeg/놀이터.jpg"
+import Mart from "../아이콘 그림/썸네일-jpeg/마트.jpg"
+import Salon from "../아이콘 그림/썸네일-jpeg/미용실.jpg"
 
 export default function SelectWord () {
 
@@ -12,6 +17,9 @@ export default function SelectWord () {
     }
   }, []);
 
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
   
   return (
     <>
@@ -24,18 +32,24 @@ export default function SelectWord () {
             </Container>
             <Container>
                 <InputGroup>
-                    <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-                    <Input placeholder="Amount" min={0} max={100} type="number" step="1" />
-                    <InputGroupAddon addonType="append">.00</InputGroupAddon>
+                    <Input />
+                    <InputGroupAddon addonType="append"><Button>검색</Button></InputGroupAddon>
                 </InputGroup>
             </Container>
           </div>
-          <div className="body bg-youtube pb-9">
+          <Container>
+            <h3 className="bg-white">단어를 누르면 단어가 추가되어 문장이 됩니다.</h3>
+          </Container>
+          <div className="body bg-youtube pb-1">
             <Container>
-              <div className="body bg-youtube pb-9">
-                <h3>품사를 선택하시오</h3>
+              <div className="body bg-youtube pb-1">
                 <ListGroup>
-                  <ListGroupItem tag="a" href="/choose1" action>파리가게뜨</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose1" action>
+                    <Container className="py-1">
+                      <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
+                    </Container>
+                    파리가게뜨
+                  </ListGroupItem>
                   <ListGroupItem tag="a" href="/choose1" action>뚜레쥬르</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose1" action>OO빵집</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose1" action>XX베이커리</ListGroupItem>
@@ -43,6 +57,19 @@ export default function SelectWord () {
               </div>
             </Container>
           </div>
+          <Container>
+            <Button color="secondary" onClick={toggle}>검색 단어 추가 문의</Button>
+            <Modal isOpen={modal} toggle={toggle} className="">
+                <ModalHeader toggle={toggle}>검색 단어 추가 문의</ModalHeader>
+                <ModalBody>
+                  <Input>추가 검색 요청할 단어를 넣으시오</Input>
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="primary" onClick={toggle}>닫기</Button>
+                  <Button color="primary" onClick={toggle}>요청하기</Button>
+                </ModalFooter>
+              </Modal>
+          </Container>
       </div>
     </>
   );

@@ -25,7 +25,6 @@ export default function SelectLocation () {
           <div className="body bg-youtube pb-9">
             <Container>
               <div className="body bg-youtube pb-9">
-                <h3>품사를 선택하시오</h3>
                 <ListGroup>
                   <ListGroupItem tag="a" href="/choose1" action>파리가게뜨</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose1" action>뚜레쥬르</ListGroupItem>

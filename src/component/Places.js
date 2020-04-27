@@ -11,17 +11,10 @@ async function getPlaces() {
 		headers: {
 			Authorization: "KakaoAK 2dde8f0dbf6d40840e4a727cd92aab7a",
 		}
-		// params: {
-		// 	y: 37.514322572335935,
-		// 	x: 127.06283102249932,
-		// 	radius: 20000,
-		// 	q: "빵집"
-		// }
 	});
 
 	const response = await Kakao.get("/v2/local/search/keyword.json?y=36.021397&x=129.337100&radius=1000&query=빵");
 
-	console.log(response)
   return response;
 }
 
@@ -35,17 +28,19 @@ function Places() {
   if (error) return <div>에러!!!</div>;
   if (!places) return <button onClick={refetch}>불러오기</button>;
 
+  console.log("State: ", state)
+
   return (
     <>
-      <ul>
+      {/* <ul>
         {places.map(place => (
           <li key={place.id} onClick={() => setPlaceId(place.id)}>
             {place.placename} ({place.name})
           </li>
         ))}
-      </ul>
+      </ul> */}
       <button onClick={refetch}>다시 불러오기</button>
-      {placeId && <Place id={placeId} />}
+      {/* {placeId && <Place id={placeId} />} */}
     </>
   );
 }
