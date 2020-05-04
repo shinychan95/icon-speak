@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useAsync } from './useAsync';
-import Place from './Place';
+;
 
 
 // useAsync 내 callback 함수에 해당하는 부분

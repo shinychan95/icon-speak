@@ -55,7 +55,7 @@ class MapSearch extends React.Component {
             <div className="header bg-instagram pb-1 py-3 py-lg-6">
               <Container className="pb-1 text-center">
                 <div className="header-body text-center">
-								  <h1 className="text-black">Icon Speak</h1>
+								  <h1 className="my-4 text-black">Icon Speak</h1>
                 </div>
               </Container>
             </div>

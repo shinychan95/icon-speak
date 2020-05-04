@@ -41,7 +41,7 @@ export default function Select () {
         <div className="header bg-twitter pb-1 py-3 py-lg-6">
           <Container>
             <div className="header-body text-center">
-              <h1 className="text-black">찾고싶은 장소를 선택하시오.</h1>
+              <h1 className="my-4 text-black" style={{fontSize: "5vw"}}> 찾고싶은 장소를 선택하시오. </h1>
             </div>
           </Container>
         </div>
