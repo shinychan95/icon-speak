@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from "reactstrap";
 import axios from 'axios'; // HTTP 클라이언트 라이브러리
 import { Link } from "react-router-dom";
-import Places from "../component/Places";
+import Btn from "../component/Btn"
+import Users from "../component/Users";
 
 class MapSearch extends React.Component {
   componentDidMount() {
@@ -70,7 +71,10 @@ class MapSearch extends React.Component {
                   </Link>
                 </Col>
                 <Col>
-                  <Places></Places>
+                  <Users></Users>
+                </Col>
+                <Col>
+                  <Btn></Btn>
                 </Col>
               </Container>                 
             </div>

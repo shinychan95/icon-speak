@@ -45,14 +45,34 @@ export default function SelectWord () {
               <div className="body bg-youtube pb-1">
                 <ListGroup>
                   <ListGroupItem tag="a" href="/choose1" action>
-                    <Container className="py-1">
-                      <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
-                    </Container>
-                    파리가게뜨
+                    <Row>
+                      <Container className="py-1">
+                        <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
+                      </Container>
+                      <h4 className="bg-white margin:" style={{margin:"auto"}}>식빵</h4>                      
+                    </Row>
                   </ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>뚜레쥬르</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>OO빵집</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>XX베이커리</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose1" action>                    <Row>
+                      <Container className="py-1">
+                        <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
+                      </Container>
+                      <h4 className="bg-white margin:" style={{margin:"auto"}}>식빵</h4>                      
+                    </Row>
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose1" action>                    <Row>
+                      <Container className="py-1">
+                        <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
+                      </Container>
+                      <h4 className="bg-white margin:" style={{margin:"auto"}}>식빵</h4>                      
+                    </Row>
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose1" action>                    <Row>
+                      <Container className="py-1">
+                        <img src={Bread} style={{display: "block", maxWidth: "20%", maxHeight: "fill-available"}}/>                        
+                      </Container>
+                      <h4 className="bg-white margin:" style={{margin:"auto"}}>식빵</h4>                      
+                    </Row>
+                  </ListGroupItem>
                 </ListGroup>
               </div>
             </Container>
