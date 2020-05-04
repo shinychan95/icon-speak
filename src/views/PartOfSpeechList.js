@@ -31,6 +31,9 @@ export default function PartOfSpeechList () {
                   <InputGroupAddon addonType="append"><Button>검색</Button></InputGroupAddon>
               </InputGroup>
             </Container>
+            <Container className="pb-1 pt-1 text-center">
+              <Button color="secondary" type="button">말하기</Button>
+            </Container>
           </div>
           <Container>
             <h3 className="bg-white">단어를 누르면 단어가 추가되어 문장이 됩니다.</h3>
@@ -47,7 +50,7 @@ export default function PartOfSpeechList () {
               </div>
             </Container>
           </div>
-          <Container>
+          <Container className="pb-1 text-center">
             <Button color="secondary" onClick={toggle}>검색 단어 추가 문의</Button>
             <Modal isOpen={modal} toggle={toggle} className="">
                 <ModalHeader toggle={toggle}>검색 단어 추가 문의</ModalHeader>

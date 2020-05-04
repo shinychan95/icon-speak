@@ -12,14 +12,15 @@ async function getUsers() {
 
 
 function Users() {
-  const [state, refetch] = useAsync(getUsers, [], true);
+  const [state, refetch] = useAsync(getUsers, [], true); // 함수 실행 시 여기는 아직 업데이트 안되었다.
   const [userId, setUserId] = useState(null);
-  const { loading, data: users, error } = state;
+  const { loading, data: users, error } = state; // state가 업데이트 안되어서 아직 업데이트 안되었다.
 
   if (loading) return <div>로딩중 ...</div>;
   if (error) return <div>에러!!!</div>;
   if (!users) return <button onClick={refetch}>불러오기</button>;
-	
+  
+  
   return (
     <>
       <ul>
