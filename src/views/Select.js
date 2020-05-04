@@ -267,6 +267,11 @@ export default function Select () {
                 </Link>
               </Col>
             </Row>
+            <Col>
+              <Link to="/main">
+                <Button color="secondary" type="button">뒤로가기</Button>
+              </Link>
+            </Col>
           </Container>  
         </div>
       </div>

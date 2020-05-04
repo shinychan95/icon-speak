@@ -9,11 +9,14 @@ import MapSearch from './views/MapSearch';
 import Select from './views/Select';
 import PartOfSpeechList from './views/PartOfSpeechList';
 import SelectLocation from './views/SelectLocation';
-import SelectWord from './views/SelectWord';
+import SelectNoun from './views/SelectNoun';
+import SelectVerb from './views/SelectVerb';
+import SelectQuant from './views/SelectQuant';
 
 // 디자인을 위한 css파일
 import "./assets/vendor/nucleo/css/nucleo.css";
 import "./assets/scss/argon-dashboard-react.scss";
+
 
 
 // 실행되는 직접적인 코드
@@ -25,7 +28,9 @@ ReactDOM.render(
       <Route path="/select_place" render={props => <Select {...props} />} />
       <Route path="/choose1" render={props => <PartOfSpeechList {...props} />} />
       <Route path="/select_Location" render={props => <SelectLocation {...props} />} />
-      <Route path="/choose2" render={props => <SelectWord {...props} />} />
+      <Route path="/choose_noun" render={props => <SelectNoun {...props} />} />
+      <Route path="/choose_verb" render={props => <SelectVerb {...props} />} />
+      <Route path="/choose_quantity" render={props => <SelectQuant {...props} />} />
       <Redirect from="/" to="/main"/>
     </Switch>
   </BrowserRouter>,

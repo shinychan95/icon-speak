@@ -76,6 +76,11 @@ class MapSearch extends React.Component {
                 <Col>
                   <Btn></Btn>
                 </Col>
+                <Col>
+                  <Link to="/select_place">
+                    <Button color="secondary" type="button">뒤로가기</Button>
+                  </Link>
+                </Col>
               </Container>                 
             </div>
         </div>

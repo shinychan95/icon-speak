@@ -42,17 +42,18 @@ export default function PartOfSpeechList () {
             <Container>
               <div className="body bg-youtube pb-1">
                 <ListGroup>
-                  <ListGroupItem tag="a" href="/choose2" action>명사</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose2" action>동사</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose2" action>형용사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose_noun" action>명사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose_verb" action>동사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choose_quantity" action>수량</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose2" action>부사</ListGroupItem>
                 </ListGroup>
               </div>
             </Container>
           </div>
-          <Container className="pb-1 text-center">
-            <Button color="secondary" onClick={toggle}>검색 단어 추가 문의</Button>
-            <Modal isOpen={modal} toggle={toggle} className="">
+          <Container>
+            <Row>
+              <Button color="secondary" onClick={toggle}>검색 단어 추가 문의</Button>
+              <Modal isOpen={modal} toggle={toggle} className="">
                 <ModalHeader toggle={toggle}>검색 단어 추가 문의</ModalHeader>
                 <ModalBody>
                   <Input>추가 검색 요청할 단어를 넣으시오</Input>
@@ -62,6 +63,10 @@ export default function PartOfSpeechList () {
                   <Button color="primary" onClick={toggle}>요청하기</Button>
                 </ModalFooter>
               </Modal>
+              <Link to="/select_Location">
+                <Button color="secondary" type="button">뒤로가기</Button>
+              </Link>
+            </Row>
           </Container>
       </div>
     </>

@@ -22,9 +22,9 @@ export default function SelectLocation () {
               </div>
             </Container>
           </div>
-          <div className="body bg-youtube pb-9">
+          <div className="body bg-youtube pb-3">
             <Container>
-              <div className="body bg-youtube pb-9">
+              <div className="body bg-youtube">
                 <ListGroup>
                   <ListGroupItem tag="a" href="/choose1" action>파리가게뜨</ListGroupItem>
                   <ListGroupItem tag="a" href="/choose1" action>뚜레쥬르</ListGroupItem>
@@ -33,6 +33,11 @@ export default function SelectLocation () {
                 </ListGroup>
               </div>
             </Container>
+          </div>
+          <div className="pb-1 pl-5">
+            <Link to="/map_search">
+              <Button color="secondary" type="button">뒤로가기</Button>
+            </Link>
           </div>
       </div>
     </>
