@@ -9,8 +9,8 @@ async function getPlace(id) {
   return response.data;
 }
 
-function User({ id }) {
-  const [state] = useAsync(() => getPlace(id), [id]);
+function Place({ data }) {
+  const [address_name] = data.address_name
   const { loading, data: user, error } = state;
 
   if (loading) return <div>로딩중..</div>;
@@ -28,4 +28,4 @@ function User({ id }) {
   );
 }
 
-export default User;
+export default Place;

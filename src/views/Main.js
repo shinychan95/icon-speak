@@ -30,7 +30,7 @@ export default function Main () {
           <div className="body bg-orange pb-9">
             <Container className="py-1 pb-4 text-center">
               <Col className="justify-content-center">
-                <img src={MainImage} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>              
+                <img src={MainImage} style={{margin:"auto", display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>              
               </Col>
             </Container>
             <Container className="pb-1 text-center">

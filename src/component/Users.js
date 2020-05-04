@@ -9,6 +9,8 @@ async function getUsers() {
   );
   return response.data;
 }
+
+
 function Users() {
   const [state, refetch] = useAsync(getUsers, [], true);
   const [userId, setUserId] = useState(null);
