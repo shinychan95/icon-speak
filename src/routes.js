@@ -6,6 +6,8 @@ import SelectLocation from './views/SelectLocation'
 import SelectNoun from './views/SelectNoun'
 import SelectVerb from './views/SelectVerb'
 import SelectQuant from './views/SelectQuant'
+import SelectAdverb from './views/SelectAdverb'
+import SelectInterro from './views/SelectInterro'
 
 var routes = [
   {
@@ -55,6 +57,18 @@ var routes = [
     name: "choose_quantity",
     component: SelectQuant,
     layout: "/choose_quantity"
+  },
+  {
+    path: "/choose_adverb",
+    name: "choose_adverb",
+    component: SelectAdverb,
+    layout: "/choose_adverb"
+  },
+  {
+    path: "/choose_interro",
+    name: "choose_interro",
+    component: SelectInterro,
+    layout: "/choose_interro"
   },
 ];
 

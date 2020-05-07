@@ -32,6 +32,7 @@ function Users() {
       </ul>
       <button onClick={refetch}>다시 불러오기</button>
       {userId && <User id={userId} />}
+      
     </>
   );
 }

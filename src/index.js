@@ -12,6 +12,8 @@ import SelectLocation from './views/SelectLocation';
 import SelectNoun from './views/SelectNoun';
 import SelectVerb from './views/SelectVerb';
 import SelectQuant from './views/SelectQuant';
+import SelectAdverb from './views/SelectAdverb';
+import SelectInterro from './views/SelectInterro';
 
 // 디자인을 위한 css파일
 import "./assets/vendor/nucleo/css/nucleo.css";
@@ -31,6 +33,8 @@ ReactDOM.render(
       <Route path="/choose_noun" render={props => <SelectNoun {...props} />} />
       <Route path="/choose_verb" render={props => <SelectVerb {...props} />} />
       <Route path="/choose_quantity" render={props => <SelectQuant {...props} />} />
+      <Route path="/choose_adverb" render={props => <SelectAdverb {...props} />} />
+      <Route path="/choose_interro" render={props => <SelectInterro {...props} />} />
       <Redirect from="/" to="/main"/>
     </Switch>
   </BrowserRouter>,
