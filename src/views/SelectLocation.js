@@ -26,16 +26,16 @@ export default function SelectLocation () {
             <Container>
               <div className="body bg-youtube">
                 <ListGroup>
-                  <ListGroupItem tag="a" href="/choose1" action>파리가게뜨</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>뚜레쥬르</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>OO빵집</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose1" action>XX베이커리</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChoosePartofSpeech/ParisBaguette" action>파리바게트</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choosePartofSpeech/TousLesJours" action>뚜레쥬르</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choosePartofSpeech/00bakerty" action>OO빵집</ListGroupItem>
+                  <ListGroupItem tag="a" href="/choosePartofSpeech/XXbakery" action>XX베이커리</ListGroupItem>
                 </ListGroup>
               </div>
             </Container>
           </div>
           <div className="pb-1 pl-5">
-            <Link to="/map_search">
+            <Link to="/MapSearch">
               <Button color="secondary" type="button">뒤로가기</Button>
             </Link>
           </div>

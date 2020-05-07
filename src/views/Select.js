@@ -49,7 +49,7 @@ export default function Select () {
           <Container>
             <Row>
               <Col>
-                <Link to="/map_search/park">
+                <Link to="/MapSearch/park">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Park} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                        
@@ -59,7 +59,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/trainStation">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Train} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -71,7 +71,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/playground">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={PlayGround} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -81,7 +81,7 @@ export default function Select () {
                 </Link>
               </Col>    
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/mart">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Mart} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -93,7 +93,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/salon">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Salon} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -103,7 +103,7 @@ export default function Select () {
                 </Link>
               </Col>      
               <Col>
-                < Link to="/map_search">
+                < Link to="/MapSearch/departmentStore">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Dpeartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -115,7 +115,7 @@ export default function Select () {
             </Row>
             <Row>                            
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/busStaion">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Bus} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -125,7 +125,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search/bakery">
+                <Link to="/MapSearch/bakery">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Bakery} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -137,7 +137,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/hospital">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Hospital}style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -147,7 +147,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/church">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Church} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -159,7 +159,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link>
+                <Link to="/MapSearch/swimmingPool">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Swimming} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -169,7 +169,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/restaurant">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Restaurant} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -181,7 +181,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/aquarium">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Aquarium} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -191,7 +191,7 @@ export default function Select () {
                 </Link>  
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/apartment">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Apartment} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -203,7 +203,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/pharmacy">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Pharmacy} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -213,7 +213,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/theater">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Theater} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -225,7 +225,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/postOffice">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Post} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -235,7 +235,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/bank">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Bank} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -247,7 +247,7 @@ export default function Select () {
             </Row>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/serviceStation">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Gas} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
@@ -257,7 +257,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/MapSearch/subwayStation">
                   <Button className="my-2" color="primary" type="button">
                     <Container>
                       <img src={Subway} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      

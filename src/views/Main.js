@@ -35,7 +35,7 @@ export default function Main () {
             </Container>
             <Container className="pb-1 text-center">
               <Col className="justify-content-center">
-                <Link to="/select_place">
+                <Link to="/SelectPlace">
                   <Button className="my-1" color="primary" type="button">
                     시작하기
                   </Button>

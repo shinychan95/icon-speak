@@ -11,64 +11,64 @@ import SelectInterro from './views/SelectInterro'
 
 var routes = [
   {
-    path: "/main",
-    name: "main",
+    path: "/Main",
+    name: "Main",
     component: Main,
-    layout: "/main"
+    layout: "/Main"
   },
   {
-    path: "/map_search",
-    name: "map_search",
+    path: "/MapSearch",
+    name: "MapSearch",
     component: MapSearch,
-    layout: "/map_search"
+    layout: "/MapSearch"
   },
   {
-    path: "/select_place",
-    name: "select_place",
+    path: "/SelectPlace",
+    name: "SelectPlace",
     component: Select,
-    layout: "/select_place"
+    layout: "/SelectPlace"
   },
   {
-    path: "/select_Location",
-    name: "select_Location",
+    path: "/SelectLocation",
+    name: "SelectLocation",
     component: SelectLocation,
-    layout: "/select_Location"
+    layout: "/SelectLocation"
   },
   {
-    path: "/choose1",
-    name: "choose1",
+    path: "/ChoosePartofSpeech",
+    name: "ChoosePartofSpeech",
     component: PartOfSpeechList,
-    layout: "/choose1"
+    layout: "/ChoosePartofSpeech"
   },
   {
-    path: "/choose_noun",
-    name: "choose_noun",
+    path: "/ChooseNoun",
+    name: "ChooseNoun",
     component: SelectNoun,
-    layout: "/choose_noun"
+    layout: "/ChooseNoun"
   },
   {
-    path: "/choose_verb",
-    name: "choose_verb",
+    path: "/ChooseVerb",
+    name: "ChooseVerb",
     component: SelectVerb,
-    layout: "/choose_verb"
+    layout: "/ChooseVerb"
   },
   {
-    path: "/choose_quantity",
-    name: "choose_quantity",
+    path: "/ChooseQuantity",
+    name: "ChooseQuantity",
     component: SelectQuant,
-    layout: "/choose_quantity"
+    layout: "/ChooseQuantity"
   },
   {
-    path: "/choose_adverb",
-    name: "choose_adverb",
+    path: "/ChooseAdverb",
+    name: "ChooseAdverb",
     component: SelectAdverb,
-    layout: "/choose_adverb"
+    layout: "/ChooseAdverb"
   },
   {
-    path: "/choose_interro",
-    name: "choose_interro",
+    path: "/ChooseInterro",
+    name: "ChooseInterro",
     component: SelectInterro,
-    layout: "/choose_interro"
+    layout: "/ChooseInterro"
   },
 ];
 

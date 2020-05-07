@@ -11,7 +11,7 @@ class MapSearch extends React.Component {
 
   componentDidMount() {
     document.body.classList.add("bg-instagram");
-
+    console.log(this.props)
     var keyword = this.props.match.params.place
     let container = document.getElementById('map');
     let options = {
@@ -75,26 +75,26 @@ class MapSearch extends React.Component {
     
   }
 
-  getSearchResult() {
-    axios.post(`https://dapi.kakao.com/v2/local/search/keyword.json?query={s}`, {
-      headers: {
-        'Authorization': 'KakaoAK 2dde8f0dbf6d40840e4a727cd92aab7a'
-      },
-      params: {
-        x: locPosition.getLng(),
-        y: locPosition.getLat(),
-        radius: 1000,
-        query: keyword
-      }
-    })
-      .then(res => {
-        console.log(res)
-    })
-    .catch(e => {
-      console.log("error", e)
-      console.log("chanyoung")
-    })
-  }
+  // getSearchResult() {
+  //   axios.post(`https://dapi.kakao.com/v2/local/search/keyword.json?query={s}`, {
+  //     headers: {
+  //       'Authorization': 'KakaoAK 2dde8f0dbf6d40840e4a727cd92aab7a'
+  //     },
+  //     params: {
+  //       x: locPosition.getLng(),
+  //       y: locPosition.getLat(),
+  //       radius: 1000,
+  //       query: keyword
+  //     }
+  //   })
+  //     .then(res => {
+  //       console.log(res)
+  //   })
+  //   .catch(e => {
+  //     console.log("error", e)
+  //     console.log("chanyoung")
+  //   })
+  // }
 
   handleClick() {
     console.log("chan")
@@ -116,7 +116,7 @@ class MapSearch extends React.Component {
               <Container className="pb-1 text-center">
                 <Col className="justify-content-center">
                   <div id="map" style={{margin: "auto", maxWidth: "100%", height: "400px"}} />
-                  <Link to="/select_Location">
+                  <Link to="/SelectLocation">
                     <Button className="my-1 mt-4" color="primary" type="button">
                       장소 탐색
                     </Button>                  
@@ -129,7 +129,7 @@ class MapSearch extends React.Component {
                   <Btn></Btn>
                 </Col>
                 <Col>
-                  <Link to="/select_place">
+                  <Link to="/SelectPlace">
                     <Button color="secondary" type="button">뒤로가기</Button>
                   </Link>
                 </Col>

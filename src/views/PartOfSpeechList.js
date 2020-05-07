@@ -42,11 +42,11 @@ export default function PartOfSpeechList () {
             <Container>
               <div className="body bg-youtube pb-1">
                 <ListGroup>
-                  <ListGroupItem tag="a" href="/choose_noun" action>명사</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose_verb" action>동사</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose_quantity" action>수량</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose_adverb" action>요구용 부사</ListGroupItem>
-                  <ListGroupItem tag="a" href="/choose_interro" action>의문사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChooseNoun" action>명사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChooseVerb" action>동사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChooseQuantity" action>수량</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChooseAdverb" action>요구용 부사</ListGroupItem>
+                  <ListGroupItem tag="a" href="/ChooseInterro" action>의문사</ListGroupItem>
                 </ListGroup>
               </div>
             </Container>
