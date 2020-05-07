@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import Go from "../장소별 그림/04_베이커리JPEG/동사/가다.png"
-import Help from "../장소별 그림/04_베이커리JPEG/동사/도와주세요.png"
-import Drink from "../장소별 그림/04_베이커리JPEG/동사/마시다.jpg"
-import Delicious from "../장소별 그림/04_베이커리JPEG/동사/맛있다.jpg"
-import Eat from "../장소별 그림/04_베이커리JPEG/동사/먹다.png"
-import Hate from "../장소별 그림/04_베이커리JPEG/동사/싫어요.png"
-import Come from "../장소별 그림/04_베이커리JPEG/동사/오다.png"
-import Like from "../장소별 그림/04_베이커리JPEG/동사/좋아요.png"
-import Order from "../장소별 그림/04_베이커리JPEG/동사/주문하다.jpg"
-import Give from "../장소별 그림/04_베이커리JPEG/동사/주세요.png"
+import Go from "../assets/locationSpeak/04_베이커리JPEG/동사/가다.png"
+import Help from "../assets/locationSpeak/04_베이커리JPEG/동사/도와주세요.png"
+import Drink from "../assets/locationSpeak/04_베이커리JPEG/동사/마시다.jpg"
+import Delicious from "../assets/locationSpeak/04_베이커리JPEG/동사/맛있다.jpg"
+import Eat from "../assets/locationSpeak/04_베이커리JPEG/동사/먹다.png"
+import Hate from "../assets/locationSpeak/04_베이커리JPEG/동사/싫어요.png"
+import Come from "../assets/locationSpeak/04_베이커리JPEG/동사/오다.png"
+import Like from "../assets/locationSpeak/04_베이커리JPEG/동사/좋아요.png"
+import Order from "../assets/locationSpeak/04_베이커리JPEG/동사/주문하다.jpg"
+import Give from "../assets/locationSpeak/04_베이커리JPEG/동사/주세요.png"
 
 export default function SelectVerb () {
 

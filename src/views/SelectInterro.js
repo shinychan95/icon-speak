@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import Who from "../장소별 그림/04_베이커리JPEG/질문/누구.jpg"
-import What from "../장소별 그림/04_베이커리JPEG/질문/무엇.jpg"
-import Where from "../장소별 그림/04_베이커리JPEG/질문/어디.jpg"
-import Date from "../장소별 그림/04_베이커리JPEG/질문/언제_1.jpg"
-import Time from "../장소별 그림/04_베이커리JPEG/질문/언제_2.jpg"
-import Long from "../장소별 그림/04_베이커리JPEG/질문/얼마나.jpg"
+import Who from "../assets/locationSpeak/04_베이커리JPEG/질문/누구.jpg"
+import What from "../assets/locationSpeak/04_베이커리JPEG/질문/무엇.jpg"
+import Where from "../assets/locationSpeak/04_베이커리JPEG/질문/어디.jpg"
+import Date from "../assets/locationSpeak/04_베이커리JPEG/질문/언제_1.jpg"
+import Time from "../assets/locationSpeak/04_베이커리JPEG/질문/언제_2.jpg"
+import Long from "../assets/locationSpeak/04_베이커리JPEG/질문/얼마나.jpg"
 
 export default function SelectInterro () {
 

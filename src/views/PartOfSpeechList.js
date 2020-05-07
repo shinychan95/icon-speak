@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem,  Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
+import Sentence from '../component/Sentence'
 
 export default function PartOfSpeechList () {
 
@@ -25,14 +26,8 @@ export default function PartOfSpeechList () {
                 <h1 className="text-black">찾을 단어가 있는 품사를 고르시오</h1>
               </div>
             </Container>
-            <Container>
-              <InputGroup>
-                  <Input />
-                  <InputGroupAddon addonType="append"><Button>검색</Button></InputGroupAddon>
-              </InputGroup>
-            </Container>
-            <Container className="pb-1 pt-1 text-center">
-              <Button color="secondary" type="button">말하기</Button>
+            <Container className="pb-1">
+              <Sentence word="단어를 클릭하면 문장란에 추가됩니다."/>
             </Container>
           </div>
           <Container>

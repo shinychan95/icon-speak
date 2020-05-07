@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import Stop from "../장소별 그림/04_베이커리JPEG/요구하기_부사/그만.png"
-import More from "../장소별 그림/04_베이커리JPEG/요구하기_부사/더.png"
-import Quick from "../장소별 그림/04_베이커리JPEG/요구하기_부사/빨리.png"
+import Stop from "../assets/locationSpeak/04_베이커리JPEG/요구하기_부사/그만.png"
+import More from "../assets/locationSpeak/04_베이커리JPEG/요구하기_부사/더.png"
+import Quick from "../assets/locationSpeak/04_베이커리JPEG/요구하기_부사/빨리.png"
 
 export default function SelectAdverb () {
 

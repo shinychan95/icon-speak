@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import One from "../장소별 그림/04_베이커리JPEG/갯수/1.jpg"
-import Two from "../장소별 그림/04_베이커리JPEG/갯수/2.jpg"
-import Three from "../장소별 그림/04_베이커리JPEG/갯수/3.jpg"
-import Four from "../장소별 그림/04_베이커리JPEG/갯수/4.jpg"
-import Many from "../장소별 그림/04_베이커리JPEG/갯수/많이.jpg"
-import None from "../장소별 그림/04_베이커리JPEG/갯수/없다.jpg"
-import Have from "../장소별 그림/04_베이커리JPEG/갯수/있다.jpg"
-import Some from "../장소별 그림/04_베이커리JPEG/갯수/조금.jpg"
+import One from "../assets/locationSpeak/04_베이커리JPEG/갯수/1.jpg"
+import Two from "../assets/locationSpeak/04_베이커리JPEG/갯수/2.jpg"
+import Three from "../assets/locationSpeak/04_베이커리JPEG/갯수/3.jpg"
+import Four from "../assets/locationSpeak/04_베이커리JPEG/갯수/4.jpg"
+import Many from "../assets/locationSpeak/04_베이커리JPEG/갯수/많이.jpg"
+import None from "../assets/locationSpeak/04_베이커리JPEG/갯수/없다.jpg"
+import Have from "../assets/locationSpeak/04_베이커리JPEG/갯수/있다.jpg"
+import Some from "../assets/locationSpeak/04_베이커리JPEG/갯수/조금.jpg"
 
 export default function SelectQuant () {
 

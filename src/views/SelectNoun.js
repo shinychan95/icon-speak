@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import Bread from "../장소별 그림/04_베이커리JPEG/베이커리/식빵.jpg"
-import Donut from "../장소별 그림/04_베이커리JPEG/베이커리/도너츠.jpg"
-import Muffin from "../장소별 그림/04_베이커리JPEG/베이커리/머핀.jpg"
-import Bagget from "../장소별 그림/04_베이커리JPEG/베이커리/바게트.jpg"
-import Sandwich from "../장소별 그림/04_베이커리JPEG/베이커리/샌드위치.jpg"
-import Rollcake from "../장소별 그림/04_베이커리JPEG/베이커리/롤케익.jpg"
-import Casstera from "../장소별 그림/04_베이커리JPEG/베이커리/카스테라.jpg"
-import Cake from "../장소별 그림/04_베이커리JPEG/베이커리/케익.jpg"
-import Croassance from "../장소별 그림/04_베이커리JPEG/베이커리/크루와상.jpg"
-import Bingsu from "../장소별 그림/04_베이커리JPEG/베이커리/팥빙수.jpg"
-import Feistry from "../장소별 그림/04_베이커리JPEG/베이커리/페이스트리.jpg"
-import Cola from "../장소별 그림/04_베이커리JPEG/베이커리/콜라.jpg"
+import Bread from "../assets/locationSpeak/04_베이커리JPEG/베이커리/식빵.jpg"
+import Donut from "../assets/locationSpeak/04_베이커리JPEG/베이커리/도너츠.jpg"
+import Muffin from "../assets/locationSpeak/04_베이커리JPEG/베이커리/머핀.jpg"
+import Bagget from "../assets/locationSpeak/04_베이커리JPEG/베이커리/바게트.jpg"
+import Sandwich from "../assets/locationSpeak/04_베이커리JPEG/베이커리/샌드위치.jpg"
+import Rollcake from "../assets/locationSpeak/04_베이커리JPEG/베이커리/롤케익.jpg"
+import Casstera from "../assets/locationSpeak/04_베이커리JPEG/베이커리/카스테라.jpg"
+import Cake from "../assets/locationSpeak/04_베이커리JPEG/베이커리/케익.jpg"
+import Croassance from "../assets/locationSpeak/04_베이커리JPEG/베이커리/크루와상.jpg"
+import Bingsu from "../assets/locationSpeak/04_베이커리JPEG/베이커리/팥빙수.jpg"
+import Feistry from "../assets/locationSpeak/04_베이커리JPEG/베이커리/페이스트리.jpg"
+import Cola from "../assets/locationSpeak/04_베이커리JPEG/베이커리/콜라.jpg"
 
 export default function SelectNoun () {
 
