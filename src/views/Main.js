@@ -66,21 +66,6 @@ export default function Main () {
           <div className="footer bg-orange">
 
           </div>
-          {/* <Container className="pb-1 text-center">
-            <Row>
-              <Col>
-              
-              </Col>
-              <Col className="justify-content-center">
-                  <Button className="my-1" color="danger" type="button" block>
-                    사용법
-                  </Button>
-              </Col>
-              <Col>
-              
-              </Col>
-            </Row>
-          </Container>  */}
       </div>
     </>
   );

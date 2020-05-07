@@ -26,7 +26,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/main" render={props => <Main {...props} />} />
-      <Route path="/map_search" render={props => <MapSearch {...props} />} />
+      <Route path="/map_search/:place" render={props => <MapSearch {...props} />} />
       <Route path="/select_place" render={props => <Select {...props} />} />
       <Route path="/choose1" render={props => <PartOfSpeechList {...props} />} />
       <Route path="/select_Location" render={props => <SelectLocation {...props} />} />

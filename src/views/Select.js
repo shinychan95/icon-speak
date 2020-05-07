@@ -49,7 +49,7 @@ export default function Select () {
           <Container>
             <Row>
               <Col>
-                <Link to="/map_search">
+                <Link to="/map_search/park">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Park} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                        
@@ -125,7 +125,7 @@ export default function Select () {
                 </Link>
               </Col>
               <Col>
-                <Link to="/map_search">
+                <Link to="/map_search/bakery">
                   <Button className="my-2" color="primary" type="button">
                     <Container className="py-1">
                       <img src={Bakery} style={{display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>                      
