@@ -8,7 +8,7 @@ var kakaoMap = {};
 
 const useGeolocation = () => {
 
-  const { map } = useSelector(state => ({ map: state.maskMap.map }), []);
+  const { map } = useSelector(state => ({ map: state.searchMap.map }), []);
 
   const { getIpAddr } = useIpAddr();
   const { getMaskDataGeo } = useMaskData();

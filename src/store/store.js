@@ -1,7 +1,7 @@
 import { createStore } from "redux";
 
 /**
- * MaskMap Action Type
+ * searchMap Action Type
  */
 
 const SET_MAP = "setMap";

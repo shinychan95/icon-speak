@@ -8,7 +8,7 @@ var kakaoMap = null;
 
 const useCenterChanged = () => {
   const { map } = useSelector(state => ({
-    map: state.maskMap.map
+    map: state.searchMap.map
   }));
 
   const { getMaskDataGeo } = useMaskData();

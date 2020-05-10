@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ListGroupItem,  Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
-import Sentence from '../component/Sentence'
+
 
 export default function PartOfSpeechList () {
 
@@ -27,7 +27,7 @@ export default function PartOfSpeechList () {
               </div>
             </Container>
             <Container className="pb-1">
-              <Sentence word="단어를 클릭하면 문장란에 추가됩니다."/>
+              
             </Container>
           </div>
           <Container>

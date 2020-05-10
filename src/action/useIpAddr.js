@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { useSelector } from "react-redux";
-import { message } from "antd";
+
 import useMaskData from "./useMaskData";
 import useSetMarker from "./kakaomap/useSetMarker";
 
@@ -10,7 +10,7 @@ var kakaoMap = null;
 
 const useIpAddr = () => {
 
-  const { map } = useSelector(state => ({ map: state.maskMap.map }), []);
+  const { map } = useSelector(state => ({ map: state.searchMap.map }), []);
 
   kakaoMap = map;
 
@@ -26,7 +26,7 @@ const useIpAddr = () => {
             setMarker();
           });
           kakaoMap.panTo(new kakao.maps.LatLng(response.data.latitude, response.data.longitude));
-          message.info({ content: "IP 위치 사용(오차 발생)", key: "IpInfo", duration: 2 });
+       
         }
       })
       .catch(error => {
