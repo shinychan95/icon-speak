@@ -9,9 +9,15 @@ import { useSelector } from "react-redux";
 
 const MapSearch = () => {
   const { map } = useSelector(state => ({ map: state.searchMap.map }), []);
-
   const { getGeo } = useGeolocation();
   const { setEvent } = useCenterChanged();
+
+  // Log를 살펴보면, map이 없다가 생기는 것을 볼 수 있는데,
+  // state에 Map이 업데이트가 되면 아래 두 함수가 실행되는 것
+  if (map) {console.log("Map is in")} else {console.log("Map is not in")}
+
+  // 특정값들이 리렌더링 시에 변경되지 않는다면 리액트로 하여금 effect를 건너뛰도록 하는 것
+  // 즉, map이 업데이트 될 때 effect를 재실행.
   useEffect(() => {
     getGeo();
     setEvent();
