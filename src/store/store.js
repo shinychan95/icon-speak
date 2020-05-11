@@ -24,10 +24,11 @@ const setStoreList = (storeList) => {
   };
 };
 
-const addMarker = (marker) => {
+const addMarker = (marker, overlay) => {
   return {
     type: ADD_MARKER,
-    marker: marker
+    marker: marker,
+    overlay: overlay
   }
 };
 
@@ -36,7 +37,8 @@ const reducer = (state = {
   searchMap: {
     map: null,
     storeList: [],
-    markers: []
+    oldMarker: [],
+    oldOverlay: []
   }
 }, action) => {
   console.log(action);
@@ -65,7 +67,8 @@ const reducer = (state = {
         ...state,
         searchMap: {
           ...state.searchMap,
-          markers: action.marker,
+          oldMarker: action.marker,
+          oldOverlay: action.overlay
         }
       };
 

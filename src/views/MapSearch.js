@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import KaKaoMap from "../component/kakaoMap/KakaoMap";
 import useGeolocation from "../action/kakaomap/useGeolocation";
 import useCenterChanged from "../action/kakaomap/useCenterChanged";
+import LocationStoreList from "../component/LocationStoreList";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "reactstrap";
 import { useSelector } from "react-redux";
@@ -19,6 +20,8 @@ const MapSearch = () => {
   // 특정값들이 리렌더링 시에 변경되지 않는다면 리액트로 하여금 effect를 건너뛰도록 하는 것
   // 즉, map이 업데이트 될 때 effect를 재실행.
   useEffect(() => {
+    document.body.classList.add("bg-instagram");
+
     getGeo();
     setEvent();
   }, [map]);
@@ -36,15 +39,12 @@ const MapSearch = () => {
           <div className="body bg-instagram pb-9">
             <Container className="pb-1 text-center">
               <Col className="justify-content-center">
-              <div style={{ height: "50vh", paddingLeft: "10px", paddingRight: "10px" }}>
-                <KaKaoMap >
-                </KaKaoMap>
-              </div>
-                <Link to="/select_Location">
-                  <Button className="my-1 mt-4" color="primary" type="button">
-                    장소 탐색
-                  </Button>                  
-                </Link>
+                <div style={{ height: "50vh", paddingLeft: "10px", paddingRight: "10px" }}>
+                  <KaKaoMap >
+                  </KaKaoMap>
+                  <LocationStoreList>
+                  </LocationStoreList>
+                </div>
               </Col>
             </Container>                 
           </div>

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import useMaskData from "../useMaskData";
+import useLocationData from "../useLocationData";
 import useSetMarker from "./useSetMarker";
 
 const { kakao } = window;
@@ -11,7 +11,7 @@ const useCenterChanged = () => {
     map: state.searchMap.map
   }));
 
-  const { getMaskDataGeo } = useMaskData();
+  const { getLocationDataGeo } = useLocationData();
 
   const { setMarker } = useSetMarker();
 
@@ -24,7 +24,7 @@ const useCenterChanged = () => {
         // 지도의 중심좌표를 얻어옵니다 
         var latlng = kakaoMap.getCenter();
 
-        getMaskDataGeo(latlng.getLat(), latlng.getLng(), 3000);
+        getLocationDataGeo(latlng.getLat(), latlng.getLng(), 3000);
 
         setMarker();
 
