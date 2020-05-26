@@ -14,11 +14,15 @@ const useGeolocation = () => {
 
   kakaoMap = map;
 
+
   const getGeo = () => {
     if (navigator.geolocation) {
       if (kakaoMap !== null) {
         // 성공하면 position
         navigator.geolocation.getCurrentPosition(position => {
+
+          
+
           // 현재 좌표를 얻으면, 데이터 요청해서 마커 표시
           getLocationDataGeo(position.coords.latitude, position.coords.longitude, 3000).then(() => {
             setMarker();
@@ -33,5 +37,6 @@ const useGeolocation = () => {
   }
   return { getGeo };
 }
+
 
 export default useGeolocation;

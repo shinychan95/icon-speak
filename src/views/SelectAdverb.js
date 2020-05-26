@@ -16,6 +16,7 @@ export default function SelectAdverb () {
   }, []);
 
   const [modal, setModal] = useState(false);
+  
 
   const toggle = () => setModal(!modal);
   

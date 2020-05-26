@@ -46,7 +46,7 @@ const useSetMarker = () => {
     // Marker 설정
     stores.map(value => {
       
-      var imageSrc = "https://raw.githubusercontent.com/JaeSeoKim/mask-map/master/resource/maskMapMarker/green.png"
+      var imageSrc = "https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg"
       var remain_stat = "100개 이상"
       var remain_color = "#87d068"
 
@@ -61,10 +61,15 @@ const useSetMarker = () => {
         `      </div>` +
         `    </div>` +
         `    <div class="ant-card-body" style="text-align: left; padding: 10px;">` +
-        `      <a href="https://map.kakao.com/link/map/${value.place_name},${value.y},${value.x}" target="_blank" >` +
-        `       <p style="width:290px; white-space:normal; ">주소: ${value.address_name}</p>` +
+        `      <p style="width:290px; white-space:normal; ">주소: ${value.address_name}</p>` +
+        `      <p style="width:290px; white-space:normal; ">거리: ${value.distance}</p>` +     
+        `      <p style="width:290px; white-space:normal; ">전화번호: ${value.phone}</p>` +
+        `      <a href="https://map.kakao.com/?urlX=${value.lat}&urlY=${value.lng}&name=${value.place_name}" target="_blank">` +
+        `       <p style="width:290px; text-align:center; ">장소 찾아가기(카카오맵으로 이동)</p>` +
         `      </a>` +
-        `       <span class="ant-tag ant-tag-has-color" style="background-color:${remain_color}">${remain_stat}</span>` +
+        `      <a href="/MakeSpeech">` +
+        `       <p style="width:290px; text-align:center; ">문장 만들어 말하기</p>` +
+        `      </a>` +
         `   </div>` +
         `  </div>` +
         `</div>`
@@ -94,14 +99,8 @@ const useSetMarker = () => {
       // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
       kakao.maps.event.addListener(marker, 'click', function () {
         console.log("Click Event: ", kakaoMap.getLevel())
-        if (kakaoMap.getLevel() >= 4) {
-          kakaoMap.setLevel(4);
-          kakaoMap.panTo(new kakao.maps.LatLng(value.y, value.x));
-        } else if (kakaoMap.getLevel() === 3) {
-          kakaoMap.panTo(new kakao.maps.LatLng(value.y, value.x));
-        } else {
-          kakaoMap.panTo(new kakao.maps.LatLng(value.y, value.x));
-        }
+
+        kakaoMap.panTo(new kakao.maps.LatLng(value.y, value.x));
         customOverlay.setMap(kakaoMap);
       });
 

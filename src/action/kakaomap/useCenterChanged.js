@@ -17,9 +17,12 @@ const useCenterChanged = () => {
 
   kakaoMap = map;
 
+
+
   const setEvent = () => {
     if (kakaoMap !== null) {
       kakao.maps.event.addListener(kakaoMap, 'dragend', () => {
+
 
         // 지도의 중심좌표를 얻어옵니다 
         var latlng = kakaoMap.getCenter();

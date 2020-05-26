@@ -8,26 +8,27 @@ import {
 } from '@ant-design/icons';
 
 
-const Navigation = () => {
+const Navigation = (props) => {
+  console.log("props.currentPath: ", props)
   return (
     <Affix style={{ marginBottom: 10 }}>
       <div className="text-center">
         <Menu
-          defaultSelectedKeys={['maskMap']}
-          defaultOpenKeys={['menu']}
+          activeKey={props.currentPath}
+          selectedKeys={props.currentPath}
           mode="horizontal"
           theme="dark"
         >
-          <Menu.Item key="maskMap">
+          <Menu.Item key="Home">
             <EnvironmentOutlined />
-            <NavLink to="/">
+            <NavLink to="/Home">
               <span>장소 찾기</span>
             </NavLink>
           </Menu.Item>
 
-          <Menu.Item key="disasterMsg">
+          <Menu.Item key="MakeSpeech">
             <NotificationOutlined />
-            <NavLink to="/ChoosePartofSpeech">
+            <NavLink to="/MakeSpeech">
               <span>장소에 따라 말하기</span>
             </NavLink>
           </Menu.Item>

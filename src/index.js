@@ -7,11 +7,14 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 // 내가 만든 자바스크립트 파일
 import Navigation from "./component/Navigation";
-import Main from './views/Main';
-import MapSearch from './views/MapSearch';
-import Select from './views/Select';
-import PartOfSpeechList from './views/PartOfSpeechList';
+import Home from './views/Home';
 import SelectLocation from './views/SelectLocation';
+
+
+import MapSearch from './views/MapSearch';
+
+import MakeSpeech from './views/MakeSpeech';
+import SelectPlace from './views/SelectPlace';
 import SelectNoun from './views/SelectNoun';
 import SelectVerb from './views/SelectVerb';
 import SelectQuant from './views/SelectQuant';
@@ -24,27 +27,26 @@ import Error_page from "./component/Error_page";
 import "./assets/vendor/nucleo/css/nucleo.css";
 import "./assets/scss/argon-dashboard-react.scss";
 
-import { Layout, Menu, Breadcrumb } from 'antd';
-const { Header, Content, Footer } = Layout;
-
 
 // 실행되는 직접적인 코드
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Navigation />
+      <Navigation props />
       <Switch>
-        <Route path="/" exact={true} component={Main} />
-        <Route path="/MapSearch/:place" exact={true} component={MapSearch} />
-        <Route path="/SelectPlace" exact={true} component={Select} />
-        <Route path="/ChoosePartofSpeech" exact={true} component={PartOfSpeechList} />
+        <Route path="/Home" exact={true} component={Home} />
         <Route path="/SelectLocation" exact={true} component={SelectLocation} />
+        <Route path="/MapSearch/:place" exact={true} component={MapSearch} />  
+
+        <Route path="/MakeSpeech" exact={true} component={MakeSpeech} />
+        <Route path="/SelectPlace" exact={true} component={SelectPlace} />
         <Route path="/ChooseNoun" exact={true} component={SelectNoun} />
         <Route path="/ChooseVerb" exact={true} component={SelectVerb} />
         <Route path="/ChooseQuantity" exact={true} component={SelectQuant} />
         <Route path="/ChooseAdverb" exact={true} component={SelectAdverb} />
         <Route path="/ChooseInterro" exact={true} component={SelectInterro} />
         <Route path="/about" exact={true} component={About} />
+        <Redirect from='/' to='/Home' />
         <Route component={Error_page} />
       </Switch>
     </BrowserRouter>
