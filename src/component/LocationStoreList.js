@@ -42,7 +42,7 @@ const LocationStoreList = () => {
   return (
     <div className="more_Info">
       <Collapse style={{ maxWidth: 500, margin: "auto", marginBottom: 5, marginTop: 5 }}>
-        <Panel header={"지도 기준 빵집 리스트"} key="searchMap">
+        <Panel header={"지도 기준 베이커리 리스트"} key="searchMap">
           {storeList.map((value, index) => (
             <div key={value.code}>
               <Card hoverable onClick={() => {

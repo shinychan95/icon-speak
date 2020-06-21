@@ -4,6 +4,7 @@ import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
 import { Collapse, Card, Tag } from "antd";
 import nounList from "../component/nounList/nounList"
+import verbList from "../component/verbList/verbList"
 
 const { Panel } = Collapse;
 
@@ -117,7 +118,14 @@ export default function MakeSpeech () {
                 </Collapse>
                 <Collapse className="mt-2">
                   <Panel header={"동사"}>
-
+                    {verbList.map((data, index) => (
+                      <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => {setSentence(sentence + data.name)}} style={{maxWidth: "30%", maxHeight: "30%"}}>
+                        <Container>
+                          <img src={data.img} style={{display: "block", maxWidth: "100%", maxHeight: "100%"}}/>                        
+                        </Container>
+                        {data.name}
+                      </Button> 
+                    ))}
                   </Panel>
                 </Collapse>
                 <Collapse className="mt-2">

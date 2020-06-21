@@ -40,89 +40,89 @@ export default [
 		"name": "놀이터"
 	},
 	{
-		"link": "/MapSearch/Park",
-		"img": Park,
-		"name": "공원"
+		"link": "/MapSearch/Mart",
+		"img": Mart,
+		"name": "마트"
 	},
 	{
-		"link": "/MapSearch/Train",
-		"img": Train,
-		"name": "기차역"
+		"link": "/MapSearch/Salon",
+		"img": Salon,
+		"name": "미용실"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/Dpeartment",
+		"img": Dpeartment,
+		"name": "백화점"
 	},
 	{
-		"link": "/MapSearch/Park",
-		"img": Park,
-		"name": "공원"
+		"link": "/MapSearch/BusStation",
+		"img": Bus,
+		"name": "버스 정류장"
 	},
 	{
-		"link": "/MapSearch/Train",
-		"img": Train,
-		"name": "기차역"
+		"link": "/MapSearch/Bakery",
+		"img": Bakery,
+		"name": "베이커리"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/Hospital",
+		"img": Hospital,
+		"name": "병원"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/Church",
+		"img": Church,
+		"name": "교회"
 	},
 	{
-		"link": "/MapSearch/Park",
-		"img": Park,
-		"name": "공원"
+		"link": "/MapSearch/SwimmingPool",
+		"img": Swimming,
+		"name": "수영장"
 	},
 	{
-		"link": "/MapSearch/Train",
-		"img": Train,
-		"name": "기차역"
+		"link": "/MapSearch/Restaurant",
+		"img": Restaurant,
+		"name": "식당"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/Aquarium",
+		"img": Aquarium,
+		"name": "아쿠아리움"
 	},
 	{
-		"link": "/MapSearch/Park",
-		"img": Park,
-		"name": "공원"
+		"link": "/MapSearch/Apartment",
+		"img": Apartment,
+		"name": "아파트"
 	},
 	{
-		"link": "/MapSearch/Train",
-		"img": Train,
-		"name": "기차역"
+		"link": "/MapSearch/Pharmacy",
+		"img": Pharmacy,
+		"name": "약국"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/Theater",
+		"img": Theater,
+		"name": "극장"
 	},
 	{
-		"link": "/MapSearch/Park",
-		"img": Park,
-		"name": "공원"
+		"link": "/MapSearch/PostOffice",
+		"img": Post,
+		"name": "우체국"
 	},
 	{
-		"link": "/MapSearch/Train",
-		"img": Train,
-		"name": "기차역"
+		"link": "/MapSearch/Bank",
+		"img": Bank,
+		"name": "은행"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/GasStation",
+		"img": Gas,
+		"name": "주유소"
 	},
 	{
-		"link": "/MapSearch/PlayGround",
-		"img": PlayGround,
-		"name": "놀이터"
+		"link": "/MapSearch/SubwayStation",
+		"img": Subway,
+		"name": "지하철역"
 	}
 ]
  
