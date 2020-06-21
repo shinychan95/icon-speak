@@ -30,7 +30,7 @@ export default function Home () {
           <div className="body bg-orange pb-9">
             <Container className="py-1 pb-4 text-center">
               <Col className="justify-content-center">
-                <img src={HomeImage} style={{margin:"auto", display: "block", maxWidth: "100%", maxHeight: "fill-available"}}/>              
+                <img src={HomeImage} style={{margin:"auto", display: "block", maxWidth: "80%", maxHeight: "fill-available"}}/>              
               </Col>
             </Container>
             <Container className="mt-4 text-center">
