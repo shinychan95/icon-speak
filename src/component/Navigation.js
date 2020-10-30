@@ -10,6 +10,7 @@ import {
 
 const Navigation = (props) => {
   console.log("props.currentPath: ", props)
+
   return (
     <Affix style={{ marginBottom: 10 }}>
       <div className="text-center">
@@ -26,12 +27,12 @@ const Navigation = (props) => {
             </NavLink>
           </Menu.Item>
 
-          <Menu.Item key="MakeSpeech">
+          {/* <Menu.Item key="MakeSpeech">
             <NotificationOutlined />
             <NavLink to="/MakeSpeech">
               <span>장소에 따라 말하기</span>
             </NavLink>
-          </Menu.Item>
+          </Menu.Item> */}
           
           <Menu.Item key="about">
             <InfoCircleOutlined />

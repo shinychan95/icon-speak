@@ -2,7 +2,7 @@ import Park from "../../assets/locationIcon/공원.jpg"
 import Train from "../../assets/locationIcon/기차역-1.jpg"
 import PlayGround from "../../assets/locationIcon/놀이터.jpg"
 import Mart from "../../assets/locationIcon/마트.jpg"
-import Salon from "../../assets/locationIcon/미용실.jpg"
+import Hairshop from "../../assets/locationIcon/미용실.jpg"
 
 import Dpeartment from "../../assets/locationIcon/백화점-1.jpg"
 import Bus from "../../assets/locationIcon/버스정류장.jpg"
@@ -45,8 +45,8 @@ export default [
 		"name": "마트"
 	},
 	{
-		"link": "/MapSearch/Salon",
-		"img": Salon,
+		"link": "/MapSearch/Hairshop",
+		"img": Hairshop,
 		"name": "미용실"
 	},
 	{

@@ -33,7 +33,7 @@ ReactDOM.render(
         <Route path="/Home" exact={true} component={Home} />
         <Route path="/SelectLocation" exact={true} component={SelectLocation} />
         <Route path="/MapSearch/:place" exact={true} component={MapSearch} />  
-        <Route path="/MakeSpeech" exact={true} component={MakeSpeech} />
+        <Route path="/MakeSpeech/:place" exact={true} component={MakeSpeech} />
         <Route path="/SelectPlace" exact={true} component={SelectPlace} />
         <Route path="/about" exact={true} component={About} />
         <Redirect from='/' to='/Home' />

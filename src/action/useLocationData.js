@@ -37,7 +37,7 @@ const useLocationData = () => {
   );
 
 
-  const getLocationDataGeo = async (lat, lng, radius, query) => {
+  const getLocationDataGeo = async (lat, lng, radius, location) => {
     console.log("lat: ", lat, " lng: ", lng, " radius: ", radius);
     const Kakao = Axios.create({
       headers: {
@@ -45,16 +45,10 @@ const useLocationData = () => {
       }
     });
     await Kakao.get(
-      `https://dapi.kakao.com/v2/local/search/keyword.json?y=${lat}&x=${lng}&radius=${radius}&query=bakery`)
+      `https://dapi.kakao.com/v2/local/search/keyword.json?y=${lat}&x=${lng}&radius=${radius}&query=${location}`)
       .then(response => {
         const { documents, meta } = response.data
         console.log(response);
-        setLocationData(
-          {
-            documents,
-            meta
-          }
-        )
 
         dispatch(actionCreators.setStoreList(documents));
         console.log(documents.length);

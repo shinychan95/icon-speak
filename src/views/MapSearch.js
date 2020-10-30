@@ -3,18 +3,17 @@ import KaKaoMap from "../component/kakaoMap/KakaoMap";
 import useGeolocation from "../action/kakaomap/useGeolocation";
 import useCenterChanged from "../action/kakaomap/useCenterChanged";
 import LocationStoreList from "../component/LocationStoreList";
-import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "reactstrap";
 import { useSelector } from "react-redux";
-import store from "../store/store";
 
 var stores = [];
 
-const MapSearch = () => {
+const MapSearch = (props) => {
   const { storeList, map } = useSelector(state => ({
     storeList: state.searchMap.storeList,
     map: state.searchMap.map
   }));
+  // gps 기능 실행 함수
   const { getGeo } = useGeolocation();
   const { setEvent } = useCenterChanged();
 
@@ -22,19 +21,21 @@ const MapSearch = () => {
   // state에 Map이 업데이트가 되면 아래 두 함수가 실행되는 것
   if (map) {console.log("Map is in")} else {console.log("Map is not in")}
   
+  console.log("props: ", props.match.params.place);
+
   // 특정값들이 리렌더링 시에 변경되지 않는다면 리액트로 하여금 effect를 건너뛰도록 하는 것
   // 즉, map이 업데이트 될 때 effect를 재실행.
   useEffect( () => {
     document.body.classList.add("bg-instagram");
-    getGeo();
-    setEvent();
+    getGeo(props.match.params.place);
+    setEvent(props.match.params.place);
     return () => {
       document.body.classList.remove("bg-instagram");
     }
   }, [map]);
 
 
-  stores = storeList
+  
   
   return (
     <>
@@ -52,8 +53,7 @@ const MapSearch = () => {
                 <div style={{ height: "50vh", paddingLeft: "10px", paddingRight: "10px" }}>
                   <KaKaoMap >
                   </KaKaoMap>
-                  <LocationStoreList>
-                  </LocationStoreList>
+                  <LocationStoreList place={props.match.params.place} />
                 </div>
               </Col>
             </Container>                 

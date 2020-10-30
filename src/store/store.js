@@ -2,6 +2,10 @@ import { createStore } from "redux";
 
 /**
  * searchMap Action Type
+ * 
+ * 전역 변수들이 저장되어 있는 파일
+ * redux 모듈은 전역 변수들을 관리한다.
+ * 
  */
 
 const SET_MAP = "setMap";

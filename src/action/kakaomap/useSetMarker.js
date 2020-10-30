@@ -8,7 +8,7 @@ var kakaoMap = {};
 var marker_old = [];
 var overlay_old = [];
 
-const useSetMarker = () => {
+const useSetMarker = (location) => {
 
   const { map, storeList, oldMarker, oldOverlay } = useSelector(state => ({
     map: state.searchMap.map,
@@ -27,7 +27,7 @@ const useSetMarker = () => {
 
 
 
-  const setMarker = () => {
+  const setMarker = (location) => {
 
     // Marker 초기화
     marker_old.map(value => {
@@ -38,7 +38,7 @@ const useSetMarker = () => {
       value.setMap(null);
     });
 
-
+    console.log("장소: ", location)
     var marker_new = [];
     var overlay_new = [];
 
@@ -67,7 +67,7 @@ const useSetMarker = () => {
         `      <a href="https://map.kakao.com/?urlX=${value.lat}&urlY=${value.lng}&name=${value.place_name}" target="_blank">` +
         `       <p style="width:290px; text-align:center; ">장소 찾아가기(카카오맵으로 이동)</p>` +
         `      </a>` +
-        `      <a href="/MakeSpeech">` +
+        `      <a href="/MakeSpeech/${location}">` +
         `       <p style="width:290px; text-align:center; ">문장 만들어 말하기</p>` +
         `      </a>` +
         `   </div>` +

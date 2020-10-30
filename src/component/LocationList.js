@@ -7,6 +7,7 @@ export default function LocationList () {
 	return (	
 		<>
 			<div>{
+				// locationList(각 장소들의 사진과 이름이 들어있는)의 목록에서 처음부터 순서대로 버튼화시킨다.
 				locationList.map((data, i) => {
 					return (
 						<Link to={data.link}>
