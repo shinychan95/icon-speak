@@ -3,8 +3,11 @@ import { Container, Row, Col, Button, ListGroup, ListGroupItem, Modal, ModalHead
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import Axios from "axios";
 import { Collapse } from "antd";
-import nounList from "../component/nounList/Bakery"
-import verbList from "../component/verbList/Bakery"
+import BakeryNounList from "../component/nounList/Bakery"
+import ParkNounList from "../component/nounList/Park"
+
+import BakeryVerbList from "../component/verbList/Bakery"
+import ParkVerbList from "../component/verbList/Park"
 
 const { Panel } = Collapse;
 
@@ -55,9 +58,10 @@ function speech(txt) {
 
 
 // 페이지 표현하는 함수
-export default function MakeSpeech(pos) {
+export default function MakeSpeech(props) {
   // 페이지가 나오기 전에 가장 먼저 실행되는 부분
   // 페이지가 실행될 때 기반이 되는 설정들을 하는 부분
+  console.log("props: ", props.match.params.place);
   useEffect(() => {
     document.body.classList.add("bg-youtube");
     setVoiceList();
@@ -98,27 +102,49 @@ export default function MakeSpeech(pos) {
   }
 
   function NounList (location) {
-    return (
-      <Collapse className="mt-2">
-        <Panel header={"명사"}>
-          {nounList.map((data, index) => (
-            <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => { setSentence(sentence + data.name) }} style={{ maxWidth: "30%", maxHeight: "30%" }}>
-              <Container>
-                <img src={data.img} style={{ display: "block", maxWidth: "100%", maxHeight: "100%" }} />
-              </Container>
-              {data.name}
-            </Button>
-          ))}
-        </Panel>
-      </Collapse>
-    )
+    location=props.match.params.place
+    console.log("location: ", location);
+    if(location == "Bakery") {
+      return (
+        <Collapse className="mt-2">
+          <Panel header={"명사"}>
+            {BakeryNounList.map((data, index) => (
+              <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => { setSentence(sentence + data.name) }} style={{ maxWidth: "30%", maxHeight: "30%" }}>
+                <Container>
+                  <img src={data.img} style={{ display: "block", maxWidth: "100%", maxHeight: "100%" }} />
+                </Container>
+                {data.name}
+              </Button>
+            ))}
+          </Panel>
+        </Collapse>
+      )      
+    }
+    else if(location == "Park") {
+      return (
+        <Collapse className="mt-2">
+          <Panel header={"명사"}>
+            {ParkNounList.map((data, index) => (
+              <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => { setSentence(sentence + data.name) }} style={{ maxWidth: "30%", maxHeight: "30%" }}>
+                <Container>
+                  <img src={data.img} style={{ display: "block", maxWidth: "100%", maxHeight: "100%" }} />
+                </Container>
+                {data.name}
+              </Button>
+            ))}
+          </Panel>
+        </Collapse>
+      )      
+    }
   }
 
   function VerbList (location) {
-    return (
+    location=props.match.params.place
+    if(location == "Bakery") {
+      return (
       <Collapse className="mt-2">
         <Panel header={"동사"}>
-          {verbList.map((data, index) => (
+          {BakeryVerbList.map((data, index) => (
             <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => { setSentence(sentence + data.name) }} style={{ maxWidth: "30%", maxHeight: "30%" }}>
               <Container>
                 <img src={data.img} style={{ display: "block", maxWidth: "100%", maxHeight: "100%" }} />
@@ -128,7 +154,24 @@ export default function MakeSpeech(pos) {
           ))}
         </Panel>
       </Collapse>
-    )
+      )
+    }
+    else if(location == "Park") {
+      return (
+      <Collapse className="mt-2">
+        <Panel header={"동사"}>
+          {ParkVerbList.map((data, index) => (
+            <Button className="mt-1 ml-1" color="primary" type="button" onClick={() => { setSentence(sentence + data.name) }} style={{ maxWidth: "30%", maxHeight: "30%" }}>
+              <Container>
+                <img src={data.img} style={{ display: "block", maxWidth: "100%", maxHeight: "100%" }} />
+              </Container>
+              {data.name}
+            </Button>
+          ))}
+        </Panel>
+      </Collapse>
+      )
+    }
   }
 
   const sendMessage = async () => {
